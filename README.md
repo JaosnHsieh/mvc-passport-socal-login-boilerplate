@@ -1,7 +1,8 @@
 # mvc-passport-socal-login-boilerplate
-a Express MVC (MySQL,Handlebars) added facebook,github,google social login(passport) , actually a memo for myself
+a Express MVC (MySQL,Handlebars) added facebook,github,google social login(passport) actually a memo for myself
 
 Generated it with yo express generator https://github.com/petecoop/generator-express
+
 social login using Passport http://passportjs.org/
 
 Refer to :
@@ -38,12 +39,11 @@ if you login successfully , yor will redirect to the root path then get social a
 
 # Change social account info scope 
 app/controllers/login.js
-such as: router.get('/auth/facebook', passportGoogle.authenticate('facebook',  
-# { scope: ['email'] }));
+such as: router.get('/auth/facebook', passportGoogle.authenticate('facebook',  { scope: ['email'] }));
 
 check above links for more details.
 
-# Change query/create Users logic ( nomarlly created a user in the database in but I haven't done this )
+# Change query/create Users logic ( nomarlly created a user in the database but I haven't done this )
 go
 ```
 app/auth/facebook.js
