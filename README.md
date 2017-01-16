@@ -43,7 +43,7 @@ such as: router.get('/auth/facebook', passportGoogle.authenticate('facebook',  {
 
 check above links for more details.
 
-# Change query/create Users logic ( nomarlly created a user in the database in but I haven't done this )
+# Change query/create Users logic ( nomarlly created a user in the database but I haven't done this )
 go
 ```
 app/auth/facebook.js
